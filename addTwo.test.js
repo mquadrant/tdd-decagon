@@ -14,3 +14,13 @@ test("Adding number to string (add 3 + 'a' to be invalid)",() =>{
 
     expect(addTwo(3,'a')).toEqual("invalid inputs");
 });
+
+test("Adding two decimal numbers (add 1.2 + 1.4 to be invalid)",() =>{
+
+    expect(addTwo(1.2,1.4)).toBeCloseTo(2.6);
+});
+
+test("Either first number or second number is null (add null + 1.4 to be 1.4)",() =>{
+
+    expect(addTwo(null,1.4)).toBeCloseTo(1.4);
+});
