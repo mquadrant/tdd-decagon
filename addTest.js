@@ -1,5 +1,5 @@
-function add(firstNumber, secondNumber){
+function addTwo(firstNumber, secondNumber){
     return firstNumber + secondNumber;
 }
 
-module.exorts = add;
+module.exorts = addTwo;
