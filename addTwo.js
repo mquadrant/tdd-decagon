@@ -1,5 +1,6 @@
 function addTwo(firstNumber, secondNumber){
-    if(typeof(firstNumber) === 'string' || typeof(secondNumber) === 'string' ){
+    if(typeof(firstNumber) !== 'number' || typeof(secondNumber) !== 'number' 
+    || isNaN(firstNumber) || isNaN(secondNumber)){
         return 'invalid inputs'
     }
     return firstNumber + secondNumber;

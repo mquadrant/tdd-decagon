@@ -20,7 +20,22 @@ test("Adding two decimal numbers (add 1.2 + 1.4 to be invalid)",() =>{
     expect(addTwo(1.2,1.4)).toBeCloseTo(2.6);
 });
 
-test("Either first number or second number is null (add null + 1.4 to be 1.4)",() =>{
+test("Either first number or second number is null (add null + 1.4 to be invalid)",() =>{
 
-    expect(addTwo(null,1.4)).toBeCloseTo(1.4);
+    expect(addTwo(null,1.4)).toEqual("invalid inputs");
+});
+
+test("Either first number or second number is undefined (add undefined + 5 to be invalid)",() =>{
+
+    expect(addTwo(undefined,5)).toEqual("invalid inputs");
+});
+
+test("Either first number or second number is empty (add '' + '' to be invalid)",() =>{
+
+    expect(addTwo('','')).toEqual("invalid inputs");
+});
+
+test("Either first number or second number is NaN (add NaN + 3 to be invalid)",() =>{
+
+    expect(addTwo(NaN, 5)).toEqual("invalid inputs");
 });
