@@ -11,3 +11,7 @@ test("Adding decimal numbers",() => {
 test("Should not add a string",() =>{
     expect(sum('a',4.4,'b',1.2)).toBe('invalid inputs')
 });
+
+test("Should not add an object",() =>{
+    expect(sum({},4.4,'b',1.2)).toBe('invalid inputs')
+});
