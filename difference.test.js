@@ -34,3 +34,7 @@ test('When a decimal number is passed',()=>{
 test('When an object is passed',()=>{
     expect(diff({},{})).toEqual('not valid');
 });
+
+test('When "undefined" is passed',()=>{
+    expect(diff(undefined,8)).toEqual('not valid');
+});
