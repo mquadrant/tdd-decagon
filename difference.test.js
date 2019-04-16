@@ -30,3 +30,7 @@ test('when "NaN" is passed',()=>{
 test('When a decimal number is passed',()=>{
     expect(diff(2.11,8)).toBeCloseTo(5.89);
 });
+
+test('When an object is passed',()=>{
+    expect(diff({},{})).toEqual('not valid');
+});
