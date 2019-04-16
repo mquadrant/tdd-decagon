@@ -27,3 +27,7 @@ test("should not add NaN",() => {
 test("should not add 'undefined'",() => {
     expect(sum(2,4.4,undefined)).toBe('invalid inputs')
 });
+
+test("should not add a null", () => {
+    expect(sum(34,54,23,null, null)).toBe('invalid inputs')
+});
