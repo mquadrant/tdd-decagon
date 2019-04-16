@@ -15,3 +15,7 @@ test("Should not add a string",() =>{
 test("Should not add an object",() =>{
     expect(sum({},4.4,'b',1.2)).toBe('invalid inputs')
 });
+
+test('Should not add an array',() => {
+    expect(sum([],2,3)).toBe('invalid inputs')
+});
