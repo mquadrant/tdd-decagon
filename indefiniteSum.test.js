@@ -19,3 +19,7 @@ test("Should not add an object",() =>{
 test('Should not add an array',() => {
     expect(sum([],2,3)).toBe('invalid inputs')
 });
+
+test("should not add NaN",() => {
+    expect(sum(NaN,2,5,6)).toBe('invalid inputs')
+});
