@@ -38,3 +38,8 @@ test('When an object is passed',()=>{
 test('When "undefined" is passed',()=>{
     expect(diff(undefined,8)).toEqual('not valid');
 });
+
+test('When "true or passed" is passed',()=>{
+    expect(diff(true,false)).toEqual('not valid');
+    expect(diff(true,false)).toEqual('not valid');
+});
