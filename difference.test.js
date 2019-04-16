@@ -18,3 +18,7 @@ test('when one or two inputs is a "string"', () => {
 test('when both are both negative number', ()=>{
     expect(diff(-3,-5)).toBe(2);
 })
+
+test('when one of the number is negative number', ()=>{
+    expect(diff(3,-5)).toBe(8);
+})
