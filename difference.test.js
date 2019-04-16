@@ -22,3 +22,7 @@ test('when both are both negative number', ()=>{
 test('when one of the number is negative number', ()=>{
     expect(diff(3,-5)).toBe(8);
 })
+
+test('when "NaN" is passed',()=>{
+    expect(diff(NaN,3)).toBe('not valid');
+})
