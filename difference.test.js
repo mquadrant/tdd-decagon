@@ -8,4 +8,9 @@ test('When the first number is greater than the second number', () => {
 test("when the second number is greater", () => {
     expect(diff(4,6)).toBe(2);
     expect(diff(21,34)).toBe(13);
-})
+});
+
+test('when one or two inputs is a "string"', () => {
+    expect(diff('a',2)).toBe("not valid");
+    expect(diff('c','a')).toBe('not valid');
+});
