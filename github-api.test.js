@@ -15,6 +15,6 @@ describe('Testing the getReposName function', () => {
         });
 
     it('When the repository is empty', async () =>{
-            expect(await getRepos('empt')).toContain('error')
+            expect(await getRepos('empt')).toEqual([])
         });
 });
