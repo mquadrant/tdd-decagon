@@ -12,6 +12,10 @@
     expect(multiply(4,{},5,{})).toEqual('not valid');
  });
 
- test('Multiplication when one or more argument is a array',()=>{
+ test('Multiplication when one or more argument is an array',()=>{
     expect(multiply([],2,5)).toEqual('not valid');
+ });
+
+ test('When one or more argument is "undefined"',()=>{
+    expect(multiply(3,4,undefined,29)).toEqual('not valid');
  });
