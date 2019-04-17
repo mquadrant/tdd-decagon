@@ -27,3 +27,7 @@
  test('When one or more argument is "NaN"',()=>{
     expect(multiply(NaN,3,2)).toEqual('not valid');
  });
+
+ test('when one or more argument is "infinity"',()=>{
+    expect(multiply(Infinity,2,4)).toEqual(Infinity);
+ });
