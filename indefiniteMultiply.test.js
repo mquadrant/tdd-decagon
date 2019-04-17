@@ -31,3 +31,12 @@
  test('when one or more argument is "infinity"',()=>{
     expect(multiply(Infinity,2,4)).toEqual(Infinity);
  });
+
+ test('when one or more argument is "string"',()=>{
+    expect(multiply('s',2,4)).toEqual('not valid');
+ });
+
+ test('when one or more argument is "true or false"',()=>{
+    expect(multiply(true,2,4)).toEqual('not valid');
+    expect(multiply(3,false,2,4)).toEqual('not valid');
+ });
