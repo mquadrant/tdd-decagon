@@ -19,3 +19,7 @@
  test('When one or more argument is "undefined"',()=>{
     expect(multiply(3,4,undefined,29)).toEqual('not valid');
  });
+
+ test('when one or more argument multiply is "null"',()=>{
+    expect(multiply(null,23,2)).toEqual('not valid');
+ });
