@@ -27,3 +27,17 @@ test('Division when either the first or the second number is "undefined"',()=>{
 test('Division when either the first or the second number is "null"',()=>{
     expect(divide(6,null)).toEqual('not valid');
 });
+
+test('Division when either the first or the second is "infinity"',()=>{
+    expect(divide(Infinity,3)).toBe(Infinity);
+    expect(divide(4,Infinity)).toBe(0);
+})
+
+test('Division when either the first or the second is "NaN"',()=>{
+    expect(divide(NaN,3)).toEqual('not valid');
+})
+
+test('Division when either the first or the second is a "Zero"',()=>{
+    expect(divide(0,3)).toBe(0);
+    expect(divide(3,0)).toBe(Infinity);
+})
