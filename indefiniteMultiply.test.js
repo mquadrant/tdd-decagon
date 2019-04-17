@@ -23,3 +23,7 @@
  test('when one or more argument multiply is "null"',()=>{
     expect(multiply(null,23,2)).toEqual('not valid');
  });
+
+ test('When one or more argument is "NaN"',()=>{
+    expect(multiply(NaN,3,2)).toEqual('not valid');
+ });
