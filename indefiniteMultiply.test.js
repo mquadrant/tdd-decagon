@@ -11,3 +11,7 @@
  test('Multiplication when one or more argument is an object',()=>{
     expect(multiply(4,{},5,{})).toEqual('not valid');
  });
+
+ test('Multiplication when one or more argument is a array',()=>{
+    expect(multiply([],2,5)).toEqual('not valid');
+ });
