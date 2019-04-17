@@ -10,6 +10,8 @@ function getReposName(userName){
             return repository.name;
         })
         return result;
+    }).catch(err => {
+        return `error: ${err.message}`
     })
 }
 module.exports = getReposName;
