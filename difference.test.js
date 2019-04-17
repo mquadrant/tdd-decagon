@@ -43,3 +43,8 @@ test('When "true or passed" is passed',()=>{
     expect(diff(true,false)).toEqual('not valid');
     expect(diff(true,false)).toEqual('not valid');
 });
+
+test('When a "null" is passed',()=>{
+    expect(diff(null,4)).toEqual('not valid');
+    expect(diff(null,null)).toEqual('not valid');
+});
