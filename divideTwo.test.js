@@ -19,3 +19,7 @@ test('Division when either the first or the second number is an "object"',()=>{
 test('Division when either the first or the second number is an "array"',()=>{
     expect(divide(3,[])).toEqual('not valid');
 });
+
+test('Division when either the first or the second number is "undefined"',()=>{
+    expect(divide(undefined,5)).toEqual('not valid');
+});
