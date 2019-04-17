@@ -11,3 +11,7 @@ test('Division when the second is greater than the first',()=>{
 test('Division when either the first or the second number is a decimal',()=>{
     expect(divide(3.7,1.2)).toBeCloseTo(3.08);
 });
+
+test('Division when either the first or the second number is an "object"',()=>{
+    expect(divide({},1.2)).toEqual('not valid');
+});
