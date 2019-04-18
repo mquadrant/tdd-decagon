@@ -35,5 +35,5 @@ test('Concatenation when the first or/and second argument is an "object"',()=>{
 });
 
 test('Concatenation when the first or/and second argument is an "array"',()=>{
-    expect(concat([two,three], 'tree')).toContain('error');
+    expect(concat(['two','three'], 'tree')).toContain('error');
 });
