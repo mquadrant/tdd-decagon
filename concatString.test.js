@@ -17,3 +17,7 @@ test('Concatenation when the first argument is a number',()=>{
 test('Concatenation when the second argument is a number',()=>{
     expect(concat('girl',2)).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is a function',()=>{
+    expect(concat(Math.max(2,5,1,4),2)).toContain('error');
+});
