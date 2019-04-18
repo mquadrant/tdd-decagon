@@ -41,3 +41,7 @@ test('Concatenation when the first or/and second argument is an "array"',()=>{
 test('Concatenation when the first or/and second argument is  "boolean"',()=>{
     expect(concat(true, 'tree')).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is an empty string',()=>{
+    expect(concat('', '')).toContain('error');
+});
