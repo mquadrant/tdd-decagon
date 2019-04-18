@@ -33,3 +33,7 @@ test('Concatenation when the first or/and second argument is "null"',()=>{
 test('Concatenation when the first or/and second argument is an "object"',()=>{
     expect(concat({'computer': 'window'}, 'null')).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is an "array"',()=>{
+    expect(concat([two,three], 'tree')).toContain('error');
+});
