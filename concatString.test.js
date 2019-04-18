@@ -13,3 +13,7 @@ describe('Concatenation when two arguments are strings', ()=>{
 test('Concatenation when the first argument is a number',()=>{
     expect(concat(2,'girl')).toContain('error');
 });
+
+test('Concatenation when the second argument is a number',()=>{
+    expect(concat('girl',2)).toContain('error');
+});

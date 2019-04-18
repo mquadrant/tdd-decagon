@@ -1,5 +1,5 @@
 const concatTwoString = (firstString, secondString) => {
-    if(typeof firstString !== 'string'){
+    if(typeof firstString !== 'string' || typeof secondString !== 'string'){
         return 'error: not a string';
     }
     return firstString + secondString;
