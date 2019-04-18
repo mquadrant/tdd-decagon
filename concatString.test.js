@@ -19,5 +19,9 @@ test('Concatenation when the second argument is a number',()=>{
 });
 
 test('Concatenation when the first or/and second argument is a function',()=>{
-    expect(concat(Math.max(2,5,1,4),2)).toContain('error');
+    expect(concat(Math.max(2,5,1,4),'book')).toContain('error');
+});
+
+test('Concatenation when the first or/and second argument is "undefined"',()=>{
+    expect(concat(undefined,'computer')).toContain('error');
 });
