@@ -25,3 +25,7 @@ test('Concatenation when the first or/and second argument is a function',()=>{
 test('Concatenation when the first or/and second argument is "undefined"',()=>{
     expect(concat(undefined,'computer')).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is "null"',()=>{
+    expect(concat('computer',null)).toContain('error');
+});
