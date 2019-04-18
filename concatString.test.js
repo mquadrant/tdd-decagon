@@ -29,3 +29,7 @@ test('Concatenation when the first or/and second argument is "undefined"',()=>{
 test('Concatenation when the first or/and second argument is "null"',()=>{
     expect(concat('computer',null)).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is an "object"',()=>{
+    expect(concat({'computer': 'window'}, 'null')).toContain('error');
+});
