@@ -45,3 +45,7 @@ test('Concatenation when the first or/and second argument is  "boolean"',()=>{
 test('Concatenation when the first or/and second argument is an empty string',()=>{
     expect(concat('', '')).toContain('error');
 });
+
+test('Concatenation when the first or/and second argument is NaN',()=>{
+    expect(concat('yam', NaN)).toContain('error');
+});
